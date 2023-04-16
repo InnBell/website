@@ -1,7 +1,8 @@
 import type { Options } from "$fresh/plugins/twind.ts";
 
-const options: Options = {
+export default {
   selfURL: import.meta.url,
-};
-
-export default options;
+  theme: {
+    extend: {},
+  },
+} satisfies Options;
