@@ -10,5 +10,11 @@
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "deno.json": "deno*, fresh.gen.ts, import_map.*, .git*"
-  }
+  },
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^\"'`]*)(?:'|\"|`)"
+    ]
+  ]
 }
