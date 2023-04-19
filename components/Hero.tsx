@@ -9,7 +9,7 @@ export default function Hero() {
       class="w-screen min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(135deg,rgba(126,42,0,0.25),rgba(126,42,0,0),rgba(126,42,0,0.5)), url(${asset(
-          "hero-bg.jpg"
+          "images/hero-bg.jpg"
         )})`,
       }}
     >
@@ -48,7 +48,7 @@ export default function Hero() {
 
       {/* Login */}
       <LinkButton
-        href="#"
+        href="https://app.innbell.com"
         variant="solid"
         class="absolute right-5 top-8 md:right-10 md:top-10"
       >
@@ -58,7 +58,7 @@ export default function Hero() {
       {/* Illustration */}
       <img
         role="none"
-        src={asset("VendorProducts.jpg")}
+        src={asset("images/VendorProducts.jpg")}
         class={clsx(
           "absolute bottom-0 overflow-hidden",
           "w-[80%] max-w-[1000px] object(top cover) rounded-t-xl shadow-2xl",
