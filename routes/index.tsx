@@ -11,7 +11,7 @@ export default function Home() {
           id="buyer"
           class="flex-1 flex items-center justify-center text-accent bg-white h-[50vh] w-screen text-5xl"
         >
-          Coming soon
+          Coming soon. Stay tuned!
         </div>
       </div>
     </body>
