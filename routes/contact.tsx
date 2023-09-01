@@ -10,7 +10,7 @@ export default function About() {
       </address>
 
       <p class="text-sm">
-        Email: <a href="mailto:info@innbell.com">info@innbell.com</a>
+        Email: <a href="mailto:contact@innbell.com">contact@innbell.com</a>
       </p>
 
       <iframe

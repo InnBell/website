@@ -399,7 +399,7 @@ export default function PrivacyPolicy() {
       </p>
       <ul>
         <li>
-          <p>By email: info@innbell.com</p>
+          <p>By email: contact@innbell.com</p>
         </li>
         <li>
           <p>

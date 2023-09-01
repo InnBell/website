@@ -10,8 +10,8 @@ export default function RefundPolicy() {
       </p>
 
       <p>
-        To start a refund, you can contact us at info@innbell.com. You can
-        always contact us for any return questions at info@innbell.com.
+        To start a refund, you can contact us at contact@innbell.com. You can
+        always contact us for any return questions at contact@innbell.com.
       </p>
 
       <h2>Refunds</h2>
@@ -23,7 +23,7 @@ export default function RefundPolicy() {
         business days. Please remember it can take some time for your bank or
         credit card company to process and post the refund too. If more than 15
         business days have passed since we've approved your return, please
-        contact us at info@innbell.com.
+        contact us at contact@innbell.com.
       </p>
     </main>
   );
