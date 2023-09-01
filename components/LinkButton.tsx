@@ -30,7 +30,7 @@ export default function LinkButton({ variant, ...props }: LinkButtonProps) {
     <a
       {...props}
       class={clsx(
-        props.class,
+        props.class?.toString(),
         variant === "solid" && solidStyle,
         variant === "outline" && outlineStyle,
         variant === "ghost" && ghostStyle,

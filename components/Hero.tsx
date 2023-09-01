@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      class="w-screen min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat"
+      class="w-screen min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat relative z-10"
       style={{
         backgroundImage: `linear-gradient(135deg,rgba(126,42,0,0.25),rgba(126,42,0,0),rgba(126,42,0,0.5)), url(${asset(
           "images/hero-bg.jpg"
@@ -38,7 +38,6 @@ export default function Hero() {
       </div>
 
       {/* Logo */}
-
       <a
         href="/"
         class="inline-block absolute left-5 md:left-10 top-5 text-accent h-16 w-16 md:h-24 md:w-24"

@@ -1,3 +1,4 @@
+import typography from "@twind/typography";
 import type { Options } from "$fresh/plugins/twind.ts";
 
 export default {
@@ -26,5 +27,8 @@ export default {
   preflight: {
     "@import":
       "url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');",
+  },
+  plugins: {
+    ...typography(),
   },
 } satisfies Options;

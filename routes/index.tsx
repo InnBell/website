@@ -3,7 +3,7 @@ import Hero from "../components/Hero.tsx";
 
 export default function Home() {
   return (
-    <body class="font-poppins leading-normal">
+    <main>
       <HtmlHead />
       <Hero />
       <div id="vendor" class="flex">
@@ -14,7 +14,7 @@ export default function Home() {
           Coming soon. Stay tuned!
         </div>
       </div>
-    </body>
+    </main>
   );
 }
 
@@ -44,7 +44,7 @@ function HtmlHead() {
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
-        // @ts-expect-error
+        // @ts-expect-error: color is not a valid attribute
         color="#7e2a00"
       />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
