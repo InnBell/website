@@ -9,7 +9,7 @@ export default function About() {
         for every need.
       </p>
       <p>
-        InnBell offers two types of accounts. A vendor is can list products and
+        InnBell offers two types of accounts. A vendor can list products and
         offer services. A buyer can browse products and services and place
         enquiries.
       </p>

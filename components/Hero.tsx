@@ -23,8 +23,8 @@ export default function Hero() {
           suppliers for every need.
         </p>
         <p class="text-lg md:text-xl text-red-800 max-w-2xl">
-          InnBell offers two types of accounts. A vendor is can list products
-          and offer services. A buyer can browse products and services and place
+          InnBell offers two types of accounts. A vendor can list products and
+          offer services. A buyer can browse products and services and place
           enquiries.
         </p>
         <div class="flex justify-center gap-5 items-center">
