@@ -14,7 +14,7 @@ export default function Hero({ title, texts, children, imageUrl }: HeroProps) {
   return (
     <section
       id="hero"
-      class="w-screen min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat relative z-10"
+      class="w-screen min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat relative z-[101]"
       style={{
         backgroundImage: `linear-gradient(135deg,rgba(126,42,0,0.25),rgba(126,42,0,0),rgba(126,42,0,0.5)), url(${asset(
           "images/hero-bg.jpg"
@@ -58,7 +58,7 @@ export default function Hero({ title, texts, children, imageUrl }: HeroProps) {
           role="none"
           src={imageUrl}
           class={clsx(
-            "absolute bottom-0 overflow-hidden",
+            "absolute bottom-0 overflow-hidden dwarf:hidden -z-[1]",
             "w-[80%] max-w-[1000px] object(top cover) rounded-t-xl shadow-2xl h-[20vh]"
           )}
         />

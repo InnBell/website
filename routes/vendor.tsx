@@ -2,6 +2,7 @@ import { asset } from "$fresh/runtime.ts";
 import { Head } from "../components/Head.tsx";
 import Hero from "../components/Hero.tsx";
 import LinkButton from "../components/LinkButton.tsx";
+import Showcase from "../components/Showcase.tsx";
 
 export default function Vendor() {
   return (
@@ -13,7 +14,7 @@ export default function Vendor() {
           "Register as a vendor to list your products and services for the hospitality industry.",
           "Receive enquiries from buyers and convert them into sales.",
         ]}
-        imageUrl={asset("images/InnBell_Enquiries.jpg")}
+        imageUrl={asset("images/InnBell_Vendor_Enquiries.jpg")}
       >
         <div class="flex justify-center gap-5 items-center">
           <LinkButton href="//app.innbell.com/CreateUser.aspx" variant="solid">
@@ -24,20 +25,38 @@ export default function Vendor() {
           </LinkButton>
         </div>
       </Hero>
-      <main id="details" class="py-28 prose mx-4 md:mx-auto min-h-screen">
-        <h2 class="font-bold">InnBell Vendor</h2>
+
+      <main id="details" class="pt-32 bg-gray-50">
+        <h2 class="font-medium text-4xl mb-12 mx-auto text-accent border-b w-max border-accentLight">
+          Features & Highlights
+        </h2>
+
+        <Showcase
+          feature="Enquiries"
+          description="Receive enquiries from buyers and convert them into sales"
+          imageUrl={asset("images/InnBell_Vendor_Enquiries.jpg")}
+        />
+        <Showcase
+          feature="Profile"
+          description="Upload your latest catalogue and create an capturing profile for buyers to see"
+          imageUrl={asset("images/InnBell_Vendor_Profile.jpg")}
+          invert
+        />
+        <Showcase
+          feature="Buyers"
+          description="Through InnBell, gain access to top-tier buyers in the industry"
+          //   imageUrl={asset("images/InnBell_Vendor_Profile.jpg")}
+        />
       </main>
+
+      <section class="py-16 w-full flex justify-center gap-4 bg-accentLight">
+        <LinkButton href="//app.innbell.com/CreateUser.aspx" variant="solid">
+          Register as a Vendor
+        </LinkButton>
+        <LinkButton href="/contact" variant="outline">
+          Contact us
+        </LinkButton>
+      </section>
     </>
   );
-}
-
-{
-  /* <div id="vendor" class="flex">
-        <div
-          id="buyer"
-          class="flex-1 flex items-center justify-center text-accent bg-white h-[50vh] w-screen text-5xl"
-        >
-          Coming soon. Stay tuned!
-        </div>
-      </div> */
 }

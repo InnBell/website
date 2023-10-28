@@ -8,7 +8,7 @@ export default function Header() {
       class={clsx(
         "fixed top-0 left-0 right-0 px-4",
         "flex flex-row justify-between items-center",
-        "bg-white shadow-md z-1"
+        "bg-white shadow-md z-[100]"
       )}
     >
       {/* Logo */}
