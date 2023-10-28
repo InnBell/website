@@ -11,7 +11,7 @@ export default function Home() {
           "InnBell is India's first B2B marketplace focussed on hospitality industry. Proudly connecting hoteliers and restaurateurs with suppliers for every need.",
           "InnBell offers two types of accounts. A vendor can list products and offer services. A buyer can browse products and services and place enquiries.",
         ]}
-        imageUrl={asset("images/InnBell_Explore.jpg")}
+        imageUrl={asset("images/InnBell_Buyer_Explore.jpg")}
       >
         <div class="flex justify-center gap-5 items-center">
           <LinkButton href="/vendor" variant="outline">

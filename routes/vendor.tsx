@@ -44,7 +44,7 @@ export default function Vendor() {
         />
         <Showcase
           feature="Buyers"
-          description="Through InnBell, gain access to top-tier buyers in the industry"
+          description="Through InnBell, gain access to trusted and verified buyers in the industry"
           //   imageUrl={asset("images/InnBell_Vendor_Profile.jpg")}
         />
       </main>
