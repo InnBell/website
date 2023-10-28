@@ -1,7 +1,11 @@
+import { Head } from "../components/Head.tsx";
+
 export default function RefundPolicy() {
   return (
     <main class="py-28 prose mx-4 md:mx-auto min-h-screen">
-      <h1 class="bold">Refund Policy</h1>
+      <Head title="Refund policy" />
+
+      <h1 class="font-bold">Refund Policy</h1>
       <p>Last updated: September 01, 2023</p>
 
       <p>

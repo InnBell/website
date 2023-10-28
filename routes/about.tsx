@@ -1,7 +1,11 @@
+import { Head } from "../components/Head.tsx";
+
 export default function About() {
   return (
     <main class="py-28 prose mx-4 md:mx-auto min-h-screen">
-      <h1 class="bold">About us</h1>
+      <Head title="About us" />
+
+      <h1 class="font-bold">About us</h1>
 
       <p>
         InnBell is India's first B2B marketplace focussed on hospitality

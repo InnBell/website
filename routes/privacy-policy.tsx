@@ -1,7 +1,10 @@
+import { Head } from "../components/Head.tsx";
+
 export default function PrivacyPolicy() {
   return (
     <main class="py-28 prose mx-4 md:mx-auto min-h-screen">
-      <h1 class="bold">Privacy Policy</h1>
+      <Head title="Privacy policy" />
+      <h1 class="font-bold">Privacy Policy</h1>
       <p>Last updated: September 01, 2023</p>
       <p>
         This Privacy Policy describes Our policies and procedures on the

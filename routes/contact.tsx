@@ -1,7 +1,11 @@
+import { Head } from "../components/Head.tsx";
+
 export default function About() {
   return (
     <main class="py-28 prose mx-4 md:mx-auto min-h-screen">
-      <h1 class="bold">Contact us</h1>
+      <Head title="Contact us" />
+
+      <h1 class="font-bold">Contact us</h1>
 
       <h2>Affinity Hospitality Solutions LLP</h2>
 

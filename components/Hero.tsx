@@ -1,8 +1,16 @@
+import { VNode } from "preact";
 import { asset } from "$fresh/runtime.ts";
 import clsx from "../utils/clsx.ts";
 import LinkButton from "./LinkButton.tsx";
 
-export default function Hero() {
+type HeroProps = {
+  title: string;
+  texts: string[];
+  children: VNode;
+  imageUrl?: string;
+};
+
+export default function Hero({ title, texts, children, imageUrl }: HeroProps) {
   return (
     <section
       id="hero"
@@ -15,26 +23,16 @@ export default function Hero() {
     >
       <div class="flex flex-col gap-10 text-center px-4 items-center my-28">
         <h1 class="font-medium text-accent leading-snug text-3xl sm:text-4xl lg:text-5xl ">
-          Connoisseur for all hospitality needs
+          {title}
         </h1>
-        <p class="text-lg md:text-xl text-red-800 max-w-2xl">
-          InnBell is India's first B2B marketplace focussed on hospitality
-          industry. Proudly connecting hoteliers and restaurateurs with
-          suppliers for every need.
-        </p>
-        <p class="text-lg md:text-xl text-red-800 max-w-2xl">
-          InnBell offers two types of accounts. A vendor can list products and
-          offer services. A buyer can browse products and services and place
-          enquiries.
-        </p>
-        <div class="flex justify-center gap-5 items-center">
-          <LinkButton href="#vendor" variant="outline">
-            I am a Vendor
-          </LinkButton>
-          <LinkButton href="#buyer" variant="outline">
-            I am a Buyer
-          </LinkButton>
-        </div>
+
+        {texts.map((text) => (
+          <p key={text} class="text-lg md:text-xl text-red-800 max-w-2xl">
+            {text}
+          </p>
+        ))}
+
+        {children}
       </div>
 
       {/* Logo */}
@@ -55,15 +53,16 @@ export default function Hero() {
       </LinkButton>
 
       {/* Illustration */}
-      <img
-        role="none"
-        src={asset("images/VendorProducts.jpg")}
-        class={clsx(
-          "absolute bottom-0 overflow-hidden",
-          "w-[80%] max-w-[1000px] object(top cover) rounded-t-xl shadow-2xl",
-          "h-16 md:h-20 lg:h-32 dwarf:hidden"
-        )}
-      />
+      {imageUrl && (
+        <img
+          role="none"
+          src={imageUrl}
+          class={clsx(
+            "absolute bottom-0 overflow-hidden",
+            "w-[80%] max-w-[1000px] object(top cover) rounded-t-xl shadow-2xl h-[20vh]"
+          )}
+        />
+      )}
     </section>
   );
 }
