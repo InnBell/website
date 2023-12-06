@@ -17,7 +17,10 @@ export default function Vendor() {
         imageUrl={asset("images/InnBell_Vendor_Enquiries.jpg")}
       >
         <div class="flex justify-center gap-5 items-center">
-          <LinkButton href="//app.innbell.com/CreateUser.aspx" variant="solid">
+          <LinkButton
+            href="http://app.innbell.com/CreateUser.aspx"
+            variant="solid"
+          >
             Register as a Vendor
           </LinkButton>
           <LinkButton href="#details" variant="outline">
@@ -50,7 +53,10 @@ export default function Vendor() {
       </main>
 
       <section class="py-16 w-full flex justify-center gap-4 bg-accentLight">
-        <LinkButton href="//app.innbell.com/CreateUser.aspx" variant="solid">
+        <LinkButton
+          href="http://app.innbell.com/CreateUser.aspx"
+          variant="solid"
+        >
           Register as a Vendor
         </LinkButton>
         <LinkButton href="/contact" variant="outline">

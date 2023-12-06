@@ -17,7 +17,7 @@ export default function Header() {
       </a>
 
       {/* Login */}
-      <LinkButton href="https://app.innbell.com" variant="solid">
+      <LinkButton href="http://app.innbell.com" variant="solid">
         Login to App
       </LinkButton>
     </header>
