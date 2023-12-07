@@ -45,7 +45,7 @@ export default function Hero({ title, texts, children, imageUrl }: HeroProps) {
 
       {/* Login */}
       <LinkButton
-        href="https://app.innbell.com"
+        href="http://app.innbell.com"
         variant="solid"
         class="absolute right-5 top-8 md:right-10 md:top-10"
       >
